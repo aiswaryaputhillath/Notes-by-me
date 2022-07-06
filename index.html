@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Notes on Html</title>
+  </head>
+
+  <body>
+    <center>
+     <hr size="4" noshade>
+    <h1>Things I learnt during <br> UDEMY BOOTCAMP</h1>
+      <hr size="4" noshade>
+    </center>
+    <p>This is a continuosly updating document</p>
+    <p>To create a webpage we use 3 components: HTML, CSS and JavaScript</p>
+    <ol>
+      <li>HTML: Creates structure of the webpage(adding button, image, text box etc)</li>
+      <li>CSS: Styling your website the way we want the webpage to look</li>
+      <li>JavaScript: Allows webpage to do things or have a behaviour</li>
+    </ol>
+    <p>As an introduction we are starting off with HTML.</p>
+    <p>HTML : Hyper Text Markup Language</p>
+
+    <!-- Used h1 tag here-->
+    <h4> H1 section headers</h4>
+    h1 tag is used for section heading element. It ranges from h1 to h6.It requires *OPENING AND CLOSING TAGS*
+    <h4> br tag </h4>
+    It produces line breaks in the text
+    Example:
+    WIthout br is:
+    hello
+    hi how are you. with br its:
+    <center>
+    <br>
+      <hr>
+    "hello
+    <br>
+    how are you?"
+      <hr>
+    </center>
+    <br>
+    I used the center tag to make it to center just to make you understand the difference
+    br tag is also called *SELF CLOSING TAG*
+    <h4> hr tag </h4>
+    Now hr tag is used for creating the horizontal lines across the documents.
+    I used it in the heading of this text. Its a SELF CLOSING TAG. Attributes are used here. I used "devdocs.io" for finding the attributes like color and size.
+    <h4>Commenting</h4>
+    Commenting is done after closing center tag in this code. please refer to that.
+    <h3> About to create My OWN website</h3>
+    * Mostly or only using HTML, i.e, just the structure <br>
+    * Could be used as a personal website or for the online CV <br>
+
+    <h4>Boilerplate code</h4>
+    <p>After creating index.html type html and press enter. It generates a set of codes. Its called boiler plate code. It contains head which contains the title of the webpage, and body tag. In body tag, all the code is put. </p>
+    When checking the code, we could see i used a p tag. Its called paragraph tag and its used for typing as a paragraph.
+    <p>
+    To italisize the text i tag is used. em tag is mostly used as it italicize and also stress emphasis on that part of the text.</p>
+     <p> Example of its use is <em>"Hey I am ITALICIZED"</em></p>
+    <p>Similar to it is to bold a segment of the text.</p>
+    <p>We have 2 tags used for the same. b tag and strong tag. We use strong tag as it makes the content strong and also bold</p>
+    <p>Example is : <strong>I AM BOLD</strong></p>
+    <h4><strong>LISTS</strong></h4>
+    <p>*<em>CHECK MDN WEB DOCS FOR EXPLANATIONS</em>*</p>
+    <p>
+      <center>
+      <a href="https://developer.mozilla.org/en-US/">MDN WEB DOCS</a>
+      </center>
+      </p>
+    {Right now i added the link using "a tag" Its called an anchor tag}
+    <p>2 types of lists: Unordered list (uses ul tag) and ordered list(uses ol tag)</p>
+    <p>In ordered list, the items are listed using the bullet points.
+    In unordered list, the items are listed using numbers</p>
+    <p>Examples of both are</p>
+    <ul>
+      <li>hi</li>
+      <li>hey</li>
+    </ul>
+    <ol>
+      <li>hey</li>
+      <li>hey</li>
+    </ol>
+
+    <h4>TO ADD IMAGES</h4>
+    <p>To add an image to the page, use img tag with attribute src="". Inside the attribute, add the URL of the saved image.</p>
+    <p>Its best to keep the image as the same hierarchical level of the code,i.e, Keep the image as in the folder where the index.html file exists.</p>
+    <p>there will also be another alt attribute. Its used for givinf the description of the uploaded image in case the image doesnt load in the page.Example for adding img is:</p>
+    <img src="pics.png" alt="Just a random pic">
+
+    <h4>HTML Tables</h4>
+    To organise the data(for structuring and layout of various components), Tables are used.
+    <p>table tag is used to define a table. As a table consists of rows, for adding a row tr tag is used and to add data in each row, we use td tag. We could always nest these attributes and create a nested table</p>
+    <p>example of the table is:</p>
+    <table>
+      <tr>
+        <td>item 1</td>
+        <td>item 2</td>
+      </tr>
+      <tr>
+        <td>item 3</td>
+        <td>item 4</td>
+      </tr>
+    </table>
+    <br>
+    <p>It contains 3 parts : thead, tbody and tfoot</p>
+    <p>Thead contains the heading of the table data. Its represented by th</p>
+    <p>The tables can be done without using this 3 parts, but its best to use them as its useful when styling them seperatly. For more info check the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#attr-frame">MDN page</a></p>
+
+    <h4>Forms in HTML</h4>
+    <p>form tag is used. Here in the personal page, we used it to put in the contact. When typing form tag and press enter, the syntax could be seen. Attributes in it are action, method. label is used in form tag.</p>
+    <p>To add the inputs from the user or others use " <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">input tag</a> ". For submit tag, value attribute is deleted. For more details refer the links below</p>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label">click to refer label tag</a></p>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">click to refer form tag</a></p>
+    Lets discuss about creating a contact me form.
+    <p>The cells needed are: "Your name","Email id","Your message". To add a text area for putting the message, we use the tag <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>.</p>
+    <p>To redirect the message to mail when clicking the submit button, in action attribute, put "mailto:....." and in method attribute put as post.</p>
+    <p>For correct functioning and posting of details, another attribute is added into form tag. enctype="text/plain". Example is given below</p>
+    <form action="mailto: abcd@gmail.com" method="post" enctype="text/plain">
+
+        <label>Enter your name</label>
+        <input type="text" name="Your name is :" value="">
+
+      <br>
+
+        <label>Enter your email ID:</label>
+            <input type="email" name="Your email ID :" value="">
+
+
+      <p>
+        <label>Your message: </label>
+        <textarea name="The message" rows="8" cols="10"></textarea>
+      </p>
+
+      <br>
+
+      <input type="Submit" name="">
+  </body>
+</html>
